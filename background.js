@@ -13,7 +13,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab)
         }
 
         // get arxiv iv
-        re = /(\d+\.\d+v?\d)/i
+        re = /(\d+\.\d+(v\d+)?)/i
         found = url.match(re)[0]
 
         // construct new url
